@@ -17,7 +17,7 @@ client.calls.create({
   if(err) {
     console.log(err);
   }else{
-    console.log(call);
+    // console.log(call);
     console.log('CALL LOGGED ABOVE');
   }
 });
@@ -38,8 +38,9 @@ server.listen("8080", "127.0.0.1", function(){
 
 server.post({ path : '/test' } , function (req, res, next) {
   var response_obj = qs.parse(req.body);
-  console.log(response_obj);
-  console.log('TRANSCRIBE LOGGED ABOVE');
+  var regex = /([^0-9]+[0-9])/g;
+  var matches = response_obj.TranscriptionText.match(regex);
+  console.log(matches);
 });
 
 server.get({ path: '/.*'}, restify.serveStatic({
