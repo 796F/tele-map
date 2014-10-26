@@ -2,7 +2,6 @@
 <Response>
     <Record
       maxLength="120"
-      transcribe=true
       transcribeCallback="http://ec2-54-84-89-6.compute-1.amazonaws.com/test"
     />
 </Response>
