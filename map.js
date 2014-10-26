@@ -34,7 +34,7 @@ server.listen("8080", "127.0.0.1", function(){
     console.log('%s ws now listening on %s ', server.name , server.url);
 });
 
-server.get({ path : '/test' } , function (req, res, next) {
+server.post({ path : '/test' } , function (req, res, next) {
   console.log(req);
   debugger;
 });
