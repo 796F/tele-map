@@ -1,11 +1,12 @@
 var twilio = require('twilio');
 var config = require('./config.js');
-// com ed 
+var qs = require('querystring');
+
 // Create a new REST API client to make authenticated requests against the
 // twilio back end
 var client = new twilio.RestClient(config.sid, config.token);
 client.calls.create({ 
-  to: "+13023546447", 
+  to: "+18003347661",
   from: "+13023973373",
   method: "GET",  
   fallbackMethod: "GET",  
@@ -35,8 +36,8 @@ server.listen("8080", "127.0.0.1", function(){
 });
 
 server.post({ path : '/test' } , function (req, res, next) {
-  console.log(req);
-  debugger;
+  var response_obj = qs.parse(req.body);
+  console.log(response_obj);
 });
 
 server.get({ path: '/.*'}, restify.serveStatic({
