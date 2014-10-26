@@ -18,6 +18,7 @@ client.calls.create({
     console.log(err);
   }else{
     console.log(call);
+    console.log('CALL LOGGED ABOVE');
   }
 });
 
@@ -38,6 +39,7 @@ server.listen("8080", "127.0.0.1", function(){
 server.post({ path : '/test' } , function (req, res, next) {
   var response_obj = qs.parse(req.body);
   console.log(response_obj);
+  console.log('TRANSCRIBE LOGGED ABOVE');
 });
 
 server.get({ path: '/.*'}, restify.serveStatic({
