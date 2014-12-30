@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
-    <Record
+    <Play digits="wwww1wwwww2wwww3"></Play>
+    <!-- <Record
       maxLength="120"
       transcribe="true"
       transcribeCallback="http://ec2-54-84-89-6.compute-1.amazonaws.com/test"
       timeout="120"
-    />
+    /> -->
 </Response>
-
-<!-- <Dial>
-  <Number>
-      858-987-6543
-  </Number>
-  <Number>
-      415-123-4567
-  </Number>
-  <Number>
-      619-765-4321
-  </Number>
-</Dial> -->
