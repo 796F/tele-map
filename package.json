@@ -1,15 +1,16 @@
-{ 
-  "name" : "tele-map",
-  "main" : "map.js",
-  "version" : "0.0.1",
-  "description" : "map out telephone menus",
-  "repository" : { 
-    "type" : "git" , 
-    "url" : "https://github.com/xiamike/tele-map"
+{
+  "name": "tele-map",
+  "main": "map.js",
+  "version": "0.0.1",
+  "description": "map out telephone menus",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiamike/tele-map"
   },
-  "dependencies" : {
-    "twilio" : "1.7.0",
-    "q", "1.0.1",
-    "restify": "2.8.3"
+  "dependencies": {
+    "firebase": "^2.0.6",
+    "q": "1.0.1",
+    "restify": "2.8.3",
+    "twilio": "1.7.0"
   }
 }
